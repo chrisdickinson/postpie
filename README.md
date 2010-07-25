@@ -7,3 +7,4 @@ Let's try this out!
     git clone http://github.com/chrisdickinson/pieshop.git && cd pieshop && sudo npm install . && cd ..
     git clone http://github.com/chrisdickinson/postpie.git && cd postpie && sudo npm install . && cd examples
     node node_test.js
+    open http://localhost:8124/

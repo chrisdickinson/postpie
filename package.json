@@ -1,0 +1,16 @@
+{
+    "name": "postpie",
+    "version":"0.0.1",
+    "description": "A pieshop backend and transport for Postgres databases.",
+    "keywords": [ 
+        "orm",
+        "django",
+        "postgres"
+    ],
+    "author":"Chris Dickinson",
+    "directories": {"lib": "./lib" },
+    "main": "./lib/postpie.main",
+    "license": [
+        "New BSD License"
+    ]
+}

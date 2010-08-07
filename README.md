@@ -6,6 +6,26 @@ and feels a bit like Django's ORM.
 
 Examples
 ---------------------------
+*Object level save/erase*
+    var author = new Author({
+        'username':'jerrylewis',
+        'first_name':'jerry',
+        'last_name':'lewis'
+    });
+    author.save(function(obj) {
+        // author now has an id
+        sys.puts(obj.id);
+    });
+
+
+    Author.objects.get({'pk':1}, function(author) {
+        author.username = 'something-new';
+        author.save();
+    });
+
+    Author.objects.get({'pk':2}, function(author) {
+        author.delete();
+    });
 
 *Delete Queries*
 
@@ -99,19 +119,6 @@ Examples
         }
     });
 
-Coming Soon / this isn't working yet
-------------------------------------
-
-I haven't made sure these work yet :(
-
-    Author.objects.get({'pk':1}, function(author) {
-        author.username = 'something-new';
-        author.save();
-    });
-
-    Author.objects.get({'pk':2}, function(author) {
-        author.delete();
-    });
 
 Installation
 -----------------------------

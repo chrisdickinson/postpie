@@ -1,6 +1,6 @@
 {
     "name": "postpie",
-    "version":"0.0.1",
+    "version":"0.0.2",
     "description": "A pieshop backend and transport for Postgres databases.",
     "keywords": [ 
         "orm",

@@ -1,6 +1,6 @@
 {
     "name": "postpie",
-    "version":"0.0.2",
+    "version":"0.0.3",
     "description": "A pieshop backend and transport for Postgres databases.",
     "keywords": [ 
         "orm",
@@ -9,7 +9,7 @@
     ],
     "author":"Chris Dickinson",
     "directories": {"lib": "./lib" },
-    "main": "./lib/postpie.main",
+    "main": "./lib/index",
     "license": [
         "New BSD License"
     ]
